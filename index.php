@@ -1,4 +1,5 @@
 <?php
 
+$hola="Hello";
 $name="Marc";
-echo $hello.", ".${name};
+echo $hola.", ".$name."\n";
