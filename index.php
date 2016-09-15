@@ -1,6 +1,10 @@
 <?php
 
 
-$hello="hello world PHP";
+$hello="hello";
 
 echo $hello;
+
+$name="Marc";
+
+echo $hello.", ".$name;
