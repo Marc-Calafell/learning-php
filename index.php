@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>
-        <?= 'hola,'. $_GET['nom'];?>
+        <?= 'hola,'. htmlspecialchars($_GET['nom']);?>
     </h1>
 </body>
 </html>
