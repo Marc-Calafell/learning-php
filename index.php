@@ -10,8 +10,9 @@
 <body>
     <h1>
         <?php
-            $hola="hola mon";
-            echo $hola;
+            $nom=$_GET['nom'];
+            $hola="hola ";
+            echo $hola .", ". $nom;
         ?>
     </h1>
 </body>
