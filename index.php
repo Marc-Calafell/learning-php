@@ -8,6 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-<h1><?php echo "hola mon"; ?></h1>
+<h1><?php $hola="hola mon"; echo $hola; ?></h1>
 </body>
 </html>
