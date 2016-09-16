@@ -17,7 +17,7 @@
     </h1>
 
     <ul>
-        <?php foreach ($noms AS $nom) : ?>
+        <?php foreach ($noms2 AS $nom) : ?>
         <li><?= $nom ?></li>
         <?php endforeach; ?>
     </ul>
