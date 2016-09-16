@@ -15,5 +15,13 @@
         ?>
         </ul>
     </h1>
+
+    <ul>
+        <?php foreach ($noms AS $nom) : ?>
+        <li><?= $nom ?></li>
+        <?php endforeach; ?>
+    </ul>
+
+
 </body>
 </html>
