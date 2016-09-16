@@ -9,19 +9,18 @@ $noms= array(
     'asd');
 
 //array associatiu
-$noms2= [
+$persona= [
     nom => 'Marc',
     sn1 => 'Calafell',
     sn2 => 'Gisbert',
     edat=> 21,
     married=> false
 ];
-
-
+/*
 die("STOP");
 echo "no es mostrara";
 dd();
+*/
+//var_dump($persona);
 
-var_dump($noms2);
-
-//require 'tempate.php';
+require 'tempate.php';

@@ -17,8 +17,14 @@
     </h1>
 
     <ul>
-        <?php foreach ($noms2 AS $nom) : ?>
+        <?php foreach ($noms AS $nom) : ?>
         <li><?= $nom ?></li>
+        <?php endforeach; ?>
+    </ul>
+
+    <ul>
+        <?php foreach ($persona AS $dades => $dada) : ?>
+            <li><b><?= $dades ?></b>: <?= $dada ?> </li>
         <?php endforeach; ?>
     </ul>
 
