@@ -1,5 +1,18 @@
 <?php
 
+function hola(){
+    echo"hola";
+}
+
+hola();
+
+function mostra($text){
+    echo $text;
+}
+
+mostra("hola");
+
+
 //$hola="hola,". $_GET['nom'];
 
 //array
