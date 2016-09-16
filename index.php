@@ -1,17 +1,11 @@
 <?php
 
-function hola(){
-    echo"hola";
-}
+include "functions.php";
 
 hola();
-
-function mostra($text){
-    echo $text;
-}
-
 mostra("hola");
-
+hellow("Marc","Calafell","Gisbert",12);
+hellow("Marc","Calafell","",12);
 
 //$hola="hola,". $_GET['nom'];
 
@@ -41,4 +35,4 @@ if($persona['married']== true){
 
 
 
-require 'tempate.php';
+//require 'tempate.php';
