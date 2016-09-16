@@ -6,7 +6,7 @@ hola();
 mostra("hola");
 hellow("Marc","Calafell","Gisbert",12);
 hellow("Marc","Calafell","",12);
-
+echo suma(1,2,3,4,5,6,7,8,9,0,123,123,123,123,123,123,123,12);
 //$hola="hola,". $_GET['nom'];
 
 //array
