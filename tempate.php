@@ -27,7 +27,9 @@
             <li><b><?= $dades ?></b>: <?= $dada ?> </li>
         <?php endforeach; ?>
     </ul>
-
+    <ul>
+        <li><b><?= $persona['married'] ? "casat" : "solter" ?> </li>
+    </ul>
 
 
 </body>

@@ -10,17 +10,22 @@ $noms= array(
 
 //array associatiu
 $persona= [
-    nom => 'Marc',
-    sn1 => 'Calafell',
-    sn2 => 'Gisbert',
-    edat=> 21,
-    married=> false
+    'nom' => 'Marc',
+    'sn1' => 'Calafell',
+    'sn2' => 'Gisbert',
+    'edat'=> 21,
+    'married'=> false
 ];
 /*
-die("STOP");
-echo "no es mostrara";
-dd();
+if($persona['married']== true){
+    echo "si";
+} else {
+    echo "no";
+}
 */
-//var_dump($persona);
+
+
+
+
 
 require 'tempate.php';
