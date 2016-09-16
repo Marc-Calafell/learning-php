@@ -5,7 +5,15 @@
 </head>
 <body>
     <h1>
-        <?= $hola;?>
+        <ul>
+        <?php
+
+        foreach ($noms AS $nom){
+            echo "<li>".$nom."</li>";
+
+        };
+        ?>
+        </ul>
     </h1>
 </body>
 </html>
