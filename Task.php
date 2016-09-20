@@ -17,4 +17,26 @@ class Task{
         $this->description = $description;
     }
 
+    public function getCompleted()
+    {
+        return $this->completed;
+    }
+
+
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $completed
+     */
+    public function Completed($complete=null)
+    {
+        if(completed == null){
+            return $complete;
+        }
+        return $this->$complete;
+    }
+
 }
