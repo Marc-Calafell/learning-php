@@ -4,16 +4,25 @@ require "functions.php";
 require 'tempate.php';
 require 'Task.php';
 
-//POPO o POJO
-// PLAIN  OLD (Java/Php)OBJECT
-$task = new Task("apendre php",false);
-$task2 = new Task("apendre java",false);
-$task3 = new Task("apendre laravel",false);
-echo"</br>";
+echo "hola</br>";
+
+// llibreria PDO: Php Data Objects
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=TODO','root','');
 
 
-var_dump($task);
-$task->completed=true;
-var_dump($task);
-$task->setDescription("tornar a sistemes");
-var_dump($task);
+try{
+
+
+} catch (PDOException $e){
+
+    die("ERROR");
+
+}
+
+$query=$pdo->prepare("SELECT * FROM todos");
+$query->execute();
+
+var_dump($query->fetchAll());
+
+
+//require 'index.tempate.php';
