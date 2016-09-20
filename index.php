@@ -6,8 +6,8 @@ require 'database/Connection.php';
 require 'database/queryBuilder.php';
 
 $pdo = connection::make();
-$query = new queryBuilder($pdo,$todos);
-$tasks = $query ->all($pdo,'todos');
+$query = new queryBuilder($pdo);
+$tasks = $query ->all('todos');
 //$Connection = new Connection();
 
 
