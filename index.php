@@ -9,10 +9,11 @@ require 'Task.php';
 $task = new Task("apendre php",false);
 $task2 = new Task("apendre java",false);
 $task3 = new Task("apendre laravel",false);
-
+echo"</br>";
 
 
 var_dump($task);
 $task->completed=true;
 var_dump($task);
-var_dump3($task);
+$task->setDescription("tornar a sistemes");
+var_dump($task);

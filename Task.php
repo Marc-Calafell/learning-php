@@ -1,7 +1,8 @@
 <?php
 class Task{
 
-    public $description;
+    protected $description;
+    private $completed;
 
     public function __construct($description, $completed){
         $this->description = $description;
@@ -12,7 +13,7 @@ class Task{
         $this->completed = true;
     }
 
-    public function description($description){
+    public function setDescription($description){
         $this->description = $description;
     }
 
