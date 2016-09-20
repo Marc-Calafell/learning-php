@@ -35,4 +35,4 @@ if($persona['married']== true){
 
 
 
-//require 'tempate.php';
+require 'tempate.php';
