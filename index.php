@@ -15,14 +15,15 @@ try{
 
 } catch (PDOException $e){
 
-    die("ERROR");
+    die("ERROR: $e");
 
 }
 
 $query=$pdo->prepare("SELECT * FROM todos");
 $query->execute();
-
-var_dump($query->fetchAll());
-
+var_dump($query->fetchAll(PDO::FETCH_OBJ));
+//var_dump($query->fetchAll(PDO::FETCH_OBJ)[0]->id);
+//var_dump($query->fetchAll(PDO::FETCH_OBJ)[1]->description);
+//var_dump($query->fetchAll(PDO::FETCH_OBJ)[2]->complete);
 
 //require 'index.tempate.php';
