@@ -4,18 +4,19 @@ require "functions.php";
 require 'tempate.php';
 
 class Task{
-    public function __construct($a, $b, $c){
-        echo $a."</br>";
-        echo $b."</br>";
-        echo $c."</br>";
+
+    public $description;
+
+    public function __construct($description){
+        $this->description = $description;
 
     }
 
 }
 
-$task = new Task("asd","asd","asd");
-$task2 = new Task;
-$task3 = new Task;
+$task = new Task("apendre php");
+$task2 = new Task("asds");
+$task3 = new Task("asdasdasd");
 
 var_dump($task);
 
