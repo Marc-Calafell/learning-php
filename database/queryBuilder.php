@@ -8,6 +8,7 @@
  */
 class queryBuilder
 {
+                //type hinting
     function all($pdo, $table)
     {
         $query = $pdo->prepare("SELECT * FROM $table");
