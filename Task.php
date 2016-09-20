@@ -4,21 +4,21 @@ class Task{
 
     public $description;
 
-    public $completed;
+    public $complete;
 
-    public function  __construct($description, $completed) {
+    public function  __construct($description, $complete) {
         $this->description = $description;
-        $this->completed = $completed;
+        $this->complete = $complete;
 
     }
 
     public function complete(){
-        $this->completed = true;
+        $this->complete = true;
 
     }
-    public function getCompleted() {
+    public function getComplete() {
 
-        return $this->completed;
+        return $this->complete;
     }
 
     public function description($description) {
