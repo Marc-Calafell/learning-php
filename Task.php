@@ -1,31 +1,15 @@
 <?php
-
-class Task{
-
+/*
+ * POPO: Plain Old PHP Object | Contenedor de tasques | Model
+ */
+class Task {
     public $description;
-
-    public $complete;
-
-    public function  __construct($description, $complete) {
+    public $completed;
+    public function __construct($description, $completed) {
         $this->description = $description;
-        $this->complete = $complete;
-
+        $this->completed = $completed;
     }
-
-    public function complete(){
-        $this->complete = true;
-
+    public function complete() {
+        $this->completed = true;
     }
-    public function getComplete() {
-
-        return $this->complete;
-    }
-
-    public function description($description) {
-
-        $this->description = $description;
-
-    }
-
-
 }
