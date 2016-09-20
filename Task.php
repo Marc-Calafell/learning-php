@@ -8,4 +8,10 @@ class Task{
         $this->completed = $completed;
     }
 
+    public function complete(){
+        $this->completed = true;
+
+
+
+    }
 }
