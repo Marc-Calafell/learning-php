@@ -8,7 +8,7 @@
  */
 class Connection
 {
-    public static function make($config)
+    public static function make($config, $message)
     {
 
         try {
@@ -21,7 +21,7 @@ class Connection
             );
             return $pdo;
         } catch (PDOException $e) {
-            die("ERROR: " . $e->getMessage());
+            die($message["dberror"]. $e->getMessage());
         }
     }
 
