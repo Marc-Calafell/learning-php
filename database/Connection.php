@@ -8,11 +8,17 @@
  */
 class Connection
 {
-    public static function make()
+    public static function make($config)
     {
 
         try {
-            $pdo = new PDO('mysql:host=127.0.0.1;dbname=TODO', 'root', '');
+            $pdo = new PDO("".
+                $config['type']."       :host=".
+                $config['host']."       ;dbname=".
+                $config['name']."",
+                $config['username'],
+                $config['passwd']
+            );
             return $pdo;
         } catch (PDOException $e) {
             die("Ha succeït un error durant la connexió. Missatge: " . $e->getMessage());
