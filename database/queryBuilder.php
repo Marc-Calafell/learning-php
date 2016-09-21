@@ -7,24 +7,6 @@
  * Time: 21:33
  */
 
-class contract {
-    /**
-     * contract constructor.
-     */
-    public function __construct($arquitece, )
-    {
-    }
-
-    public function builtHome(){
-        $this->arquitectes->dissenyar();
-        $this->paleta->construir();
-        $this->electricista->enchufar();
-
-    }
-
-}
-
-
 
 class queryBuilder
 {
