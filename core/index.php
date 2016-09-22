@@ -14,7 +14,6 @@ $routes=[
     'about' => 'controlers/about.php',
     'contact' => 'controlers/contact.php',
     'persons' => 'controlers/persons.php',
-    'task' => 'controlers/tempate.php'
 ];
 
 $uri=(trim($_SERVER['REQUEST_URI'],'/'));
