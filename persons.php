@@ -10,16 +10,15 @@
 <body>
 
 <ul>
-    <?php foreach ($tasks as $task) : ?>
+    <?php foreach ($persons as $person) : ?>
         <li>
-            <?php if ($task->Name) : ?>
-                <strike><?= $task->Lastname?></strike>
-            <?php else:?>
-                <?= $task->Lastname ?>
-            <?php endif;?>
+            <?= $person->LastName ?>
         </li>
     <?php endforeach;?>
 </ul>
+
+<?php require 'menu.php'; ?>
+
 
 </body>
 </html>
