@@ -5,5 +5,5 @@ return [
     'persons'    => 'controllers/persons.php',
     'about'      => 'controllers/about.php',
     'contact'    => 'controllers/contact.php',
-    'add/person'    => 'controllers/addperson.php',
+    'addperson'    => 'controllers/addperson.php',
 ];

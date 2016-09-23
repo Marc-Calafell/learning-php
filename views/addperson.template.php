@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="">
+<form method="post" action="../controllers/addperson.php">
     <?php require 'menu.php' ?>
 
     <input type="text" name="name" placeholder="put your name here"/>
