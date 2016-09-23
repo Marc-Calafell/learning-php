@@ -1,13 +1,17 @@
 <?php
 
-require "functions.php";
-require 'Task.php';
+require 'functions.php';
+
+require 'Models/Task.php';
+
 require 'database/Connection.php';
-require 'database/queryBuilder.php';
+
+require 'database/QueryBuilder.php';
 
 $config = require 'config/database.php';
+
 $message = require 'config/message.php';
 
-$pdo = connection::make($config,$message);
-$query = new queryBuilder($pdo);
+$pdo = Connection::make($config,$message);
 
+$query = new QueryBuilder($pdo);

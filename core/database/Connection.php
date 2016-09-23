@@ -1,27 +1,29 @@
 <?php
 
+
+
 /**
- * Created by PhpStorm.
- * User: mark
- * Date: 20/09/16
- * Time: 21:22
+ * Class Connection
  */
 class Connection
 {
-    public static function make($config, $message)
-    {
+
+    /**
+     * @return PDO
+     */
+    public static function make($config,$message) {
 
         try {
-            $pdo = new PDO("".
-                $config['type']."       :host=".
-                $config['host']."       ;dbname=".
-                $config['name']."",
+            $pdo = new PDO(
+                $config['dbtype'] . ':host='.
+                $config['dbhost'] . ';dbname=' .
+                $config['dbname'],
                 $config['username'],
-                $config['passwd']
-            );
+                $config['password']);
+
             return $pdo;
         } catch (PDOException $e) {
-            die($message["dberror"]. $e->getMessage());
+            die( $message['dberror'] . $e->getMessage());
         }
     }
 
