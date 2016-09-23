@@ -11,4 +11,4 @@ print_r($_POST);
 
 
 
-require ''
+require 'views/addperson.template.php';
