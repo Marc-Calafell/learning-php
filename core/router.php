@@ -10,10 +10,10 @@ class router
 {
     protected $routes=[];
 
-    public function define($routes){
-        $this->routes =$routes;
-
-    }
+//    public function define($routes){
+//        $this->routes =$routes;
+//
+//    }
 
     public function direct($uri)
     {
@@ -27,9 +27,12 @@ class router
     public static function load($routes){
 
         $router= new static;
+
         $router->routes = require $routes;
-        var_dump($routes);
+
         return $router;
+
+
     }
 
 

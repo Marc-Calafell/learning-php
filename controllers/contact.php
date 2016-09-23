@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<?php require '../views/menu.php' ?>
+<?php require 'views/menu.php' ?>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores blanditiis consectetur cupiditate et eveniet, fugiat in inventore minima, nesciunt odio quia sint ullam. Aliquam et in praesentium quod sit.
 </body>
