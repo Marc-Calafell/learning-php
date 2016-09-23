@@ -14,7 +14,7 @@
     <input type="text" name="name" placeholder="put your name here"/>
     <input type="submit" value="Enviar"/>
 
-    hola
+
 
 </form>
 

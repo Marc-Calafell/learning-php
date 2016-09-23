@@ -1,10 +1,8 @@
 <?php
 
 require "core/bootstrap.php";
-
-require 'core/router.php';
-
 require "core/Request.php";
+require 'core/router.php';
 
 // poo
 
@@ -16,7 +14,10 @@ require "core/Request.php";
 
 //require $router->direct($uri);
 
-require router::load('routes.php')-> direct(Request::uri());
+//var_dump( router::load('routes.php'));
+require router::load('routes.php')->direct(Request::uri());
+
+
 
 //DRY: DON'T REPEAT YOURSELF
 //WET: WRITE EVERITHING TWICE
