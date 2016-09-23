@@ -5,4 +5,5 @@ $routes = [
     'persons'    => 'controllers/persons.php',
     'about'      => 'controllers/about.php',
     'contact'    => 'controllers/contact.php',
+    'add/person'    => 'controllers/addperson.php',
 ];

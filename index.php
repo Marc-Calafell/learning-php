@@ -8,7 +8,7 @@ require "core/Request.php";
 
 // poo
 
-$routes = require "routes.php";
+//$routes = require "routes.php";
 //$uri= Request::uri();
 //$router= new router;
 //$router->direct($uri);
