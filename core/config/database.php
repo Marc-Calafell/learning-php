@@ -1,6 +1,6 @@
 <?php
 //db config
-$config=[
+return [
     "type" => "mysql",
     "host" => "127.0.0.1",
     "name" => "TODO",

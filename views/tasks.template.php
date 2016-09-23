@@ -10,7 +10,6 @@
 <body>
 
      <?php require 'menu.php' ?>
-
       <ul>
           <?php foreach ($tasks as $task) : ?>
               <li>

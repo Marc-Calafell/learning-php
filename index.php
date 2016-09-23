@@ -4,7 +4,13 @@ require "core/bootstrap.php";
 
 require 'routes.php';
 
-$uri = trim($_SERVER['REQUEST_URI'],'/');
+require "core/Request.php";
+
+// poo
+
+Request::uri();
+
+
 
 if ( array_key_exists($uri,$routes) ) {
     require $routes[$uri];

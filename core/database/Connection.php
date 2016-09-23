@@ -15,11 +15,11 @@ class Connection
 
         try {
             $pdo = new PDO(
-                $config['dbtype'] . ':host='.
-                $config['dbhost'] . ';dbname=' .
-                $config['dbname'],
+                $config['type'] . ':host='.
+                $config['host'] . ';dbname=' .
+                $config['name'],
                 $config['username'],
-                $config['password']);
+                $config['passwd']);
 
             return $pdo;
         } catch (PDOException $e) {
