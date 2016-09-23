@@ -2,21 +2,21 @@
 
 require "core/bootstrap.php";
 
-require 'routes.php';
+require 'core/router.php';
 
 require "core/Request.php";
 
 // poo
 
-Request::uri();
+$routes = require "routes.php";
+//$uri= Request::uri();
+//$router= new router;
+//$router->direct($uri);
+//$router ->define($routes);
 
+//require $router->direct($uri);
 
-
-if ( array_key_exists($uri,$routes) ) {
-    require $routes[$uri];
-} else {
-    throw new Exception("No s'ha trobat la ruta");
-}
+require router::load('routes.php')-> direct(Request::uri());
 
 //DRY: DON'T REPEAT YOURSELF
 //WET: WRITE EVERITHING TWICE
