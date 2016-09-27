@@ -15,7 +15,7 @@ require 'core/router.php';
 //require $router->direct($uri);
 
 //var_dump( router::load('routes.php'));
-require router::load('routes.php')->direct(Request::uri());
+require Marccalafell\router::load('routes.php')->direct(Marccalafell\Request::uri());
 
 
 

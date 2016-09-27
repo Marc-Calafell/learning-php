@@ -3,6 +3,8 @@
 /*
  * POPO: Plain Old PHP Object | Contenedor de tasques | Model
  */
+namespace Marccalafell;
+
 class Task {
 
     public $description;

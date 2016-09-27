@@ -1,4 +1,5 @@
 <?php
+namespace Marccalafell;
 
 class Person
 {

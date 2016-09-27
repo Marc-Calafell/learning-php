@@ -1,5 +1,5 @@
 <?php
-
+namespace Marccalafell;
 
 /**
  * Class QueryBuilder
