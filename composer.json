@@ -1,0 +1,19 @@
+{
+    "name": "marccalafell/learning-php",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marc",
+            "email": "mcalafellsmx@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Marccalafell\\learning-php\\" : "/"
+        }
+    }
+}
